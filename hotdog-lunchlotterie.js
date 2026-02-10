@@ -155,7 +155,7 @@ const endeDatum = parseGermanDate(endeDatumString);
 
 const totaleDifferenz = datediff(startDatum, endeDatum);
 const aktuelleDifferenz = datediff(startDatum, new Date());
-const tageÜbrig = totaleDifferenz - aktuelleDifferenz;
+const tageÜbrig = (totaleDifferenz - aktuelleDifferenz) + 1;
 
 console.log(tageÜbrig + "tage");
 
